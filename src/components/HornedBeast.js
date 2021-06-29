@@ -22,6 +22,10 @@ class HornedBeast extends React.Component {
         })
     }
 
+    updateCardState = () => {
+        this.props.showCard();
+    }
+
     render() {
         return (
 <>
@@ -31,7 +35,7 @@ class HornedBeast extends React.Component {
                 <p>❤️ {this.state.numberOfVotes}</p>  </>  */}
 
 {/* <Card className="cc" border="dark" style={{ width: '18rem' , float: 'left' , padding: '10px' , margin: '10px' ,}}></Card> */}
-                 <Card className="cc" border="dark" style={{ width: '18rem'  , padding: '10px' , margin: '10px' ,}}>
+                 <Card onClick={this.updateCardState} className="cc" border="dark" style={{ width: '18rem'  , padding: '10px' , margin: '10px' ,}}>
                 <Card.Img onClick={this.increaseNoOfVotes} variant="top" src={this.props.image_url} alt={this.props.title} />
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
