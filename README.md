@@ -2,6 +2,44 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Number and name of feature: Feature 1: Display images
+
+## Estimate of time needed to complete: 1 hour
+
+## Start time: 3pm
+
+## Finish time: 4pm
+
+## Actual time needed to complete: half an hour
+
+
+
+## Number and name of feature: Feature 2: Allow users to vote for their favorite beast
+
+## Estimate of time needed to complete: 1 hour
+
+## Start time: 4pm
+
+## Finish time: 5pm
+
+## Actual time needed to complete: half an hour
+
+
+
+
+## Number and name of feature: Feature 3: Bootstrap
+
+## Estimate of time needed to complete: 1 hour
+
+## Start time: 5pm
+
+## Finish time: 6pm
+
+## Actual time needed to complete: half an hour
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
