@@ -1,7 +1,8 @@
 import React from 'react'
 import HornedBeast from './HornedBeast'
 import Horned from './Horned.json';
-// import './Main.css';
+
+
 
 class Main extends React.Component {
     render() {
