@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
+
 ## Number and name of feature: Feature 1: Display images
 
 ## Estimate of time needed to complete: 1 hour
@@ -37,7 +38,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Finish time: 6pm
 
 ## Actual time needed to complete: half an hour
-
 
 
 ## Available Scripts
