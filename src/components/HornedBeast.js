@@ -32,7 +32,7 @@ class HornedBeast extends React.Component {
 
 {/* <Card className="cc" border="dark" style={{ width: '18rem' , float: 'left' , padding: '10px' , margin: '10px' ,}}></Card> */}
                  <Card className="cc" border="dark" style={{ width: '18rem'  , padding: '10px' , margin: '10px' ,}}>
-                <Card.Img onClick={this.increaseNoOfVotes} variant="top" src={this.props.image_url} alt={this.props.title} />
+                <Card.Img  variant="top" src={this.props.image_url} alt={this.props.title} />
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>
@@ -41,11 +41,11 @@ class HornedBeast extends React.Component {
                     <Card.Text>
                         <i className="fas fa-heart">favorited: {this.state.votes}</i>
                     </Card.Text>
-                    <Card.Text>
-                        ❤️ {this.state.numberOfVotes}
+                    <Card.Text >
+                    💚 {this.state.numberOfVotes}
                     </Card.Text>
                    
-                    <Button variant="primary">Vote</Button>
+                    <Button onClick={this.increaseNoOfVotes} variant="primary">Vote</Button>
                 </Card.Body>
             </Card>
             </>
