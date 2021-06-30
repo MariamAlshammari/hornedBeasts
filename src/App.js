@@ -39,7 +39,9 @@ class App extends React.Component {
      
       <Header/>
 
-      <Main showCard={this.showCard} hornedData={this.state.data}/>
+      <Main showCard={this.showCard} hornedData={this.state.data}
+      //  hideCard={this.hideCard}
+       />
       <SelectedBeast selected={this.state.selected} showingData={this.state.showingData} hideCard={this.hideCard} />
    
    <Footer />
