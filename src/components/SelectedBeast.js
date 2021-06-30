@@ -23,6 +23,9 @@ class SelectedBeast extends React.Component {
                     <Card.Text>
                         {this.props.showingData.description}
                     </Card.Text>
+                    <Card.Text  >
+                       Horns Number: {this.props.showingData.horns}
+                    </Card.Text>
                
                 </Card.Body>
             </Card>

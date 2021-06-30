@@ -25,7 +25,8 @@ class HornedBeast extends React.Component {
     updateCardState = () => {
         let info={ title:this.props.title,
         description:this.props.description,
-        image_url :this.props.image_url
+        image_url :this.props.image_url,
+        horns :this.props.horns
         
         }
 
@@ -54,6 +55,9 @@ class HornedBeast extends React.Component {
                     <Card.Title  >{this.props.title}</Card.Title>
                     <Card.Text  >
                         {this.props.description}
+                    </Card.Text>
+                    <Card.Text  >
+                       Horns Number: {this.props.horns}
                     </Card.Text>
                     <Card.Text   >
                         <i className="fas fa-heart">favorited: 💚 {this.state.numberOfVotes}</i>
