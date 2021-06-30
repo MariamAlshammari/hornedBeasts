@@ -40,6 +40,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Actual time needed to complete: half an hour
 
 
+
+## Number and name of feature: Feature 4: Display a Modal
+
+## Estimate of time needed to complete: 4 hours
+
+## Start time: 2pm
+
+## Finish time: 6pm
+
+## Actual time needed to complete: 1 hours
+
+
 ## Available Scripts
 
 In the project directory, you can run:

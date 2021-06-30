@@ -23,8 +23,19 @@ class HornedBeast extends React.Component {
     }
 
     updateCardState = () => {
-        this.props.showCard();
+        let info={ title:this.props.title,
+        description:this.props.description,
+        image_url :this.props.image_url
+        
+        }
+
+        this.props.showCard(info);
     }
+
+    // hideCardState = () =>{
+        
+    //     this.props.hideCard();
+    // }
 
     render() {
         return (
@@ -35,23 +46,28 @@ class HornedBeast extends React.Component {
                 <p>❤️ {this.state.numberOfVotes}</p>  </>  */}
 
 {/* <Card className="cc" border="dark" style={{ width: '18rem' , float: 'left' , padding: '10px' , margin: '10px' ,}}></Card> */}
-                 <Card onClick={this.updateCardState} className="cc" border="dark" style={{ width: '18rem'  , padding: '10px' , margin: '10px' ,}}>
-                <Card.Img onClick={this.increaseNoOfVotes} variant="top" src={this.props.image_url} alt={this.props.title} />
-                <Card.Body>
-                    <Card.Title>{this.props.title}</Card.Title>
-                    <Card.Text>
+                 <Card  className="cc" border="dark" style={{ width: '18rem'  , padding: '10px' , margin: '10px' ,}}>
+               
+                <Card.Img onClick={this.updateCardState}  variant="top" src={this.props.image_url} alt={this.props.title} />
+                <Card.Body >
+                <div onClick={this.updateCardState} >
+                    <Card.Title  >{this.props.title}</Card.Title>
+                    <Card.Text  >
                         {this.props.description}
                     </Card.Text>
-                    <Card.Text>
-                        <i className="fas fa-heart">favorited: {this.state.votes}</i>
+                    <Card.Text   >
+                        <i className="fas fa-heart">favorited: 💚 {this.state.numberOfVotes}</i>
                     </Card.Text>
-                    <Card.Text>
-                        ❤️ {this.state.numberOfVotes}
-                    </Card.Text>
-                   
-                    <Button variant="primary">Vote</Button>
+                    {/* <Card.Text>
+                    💚 {this.state.numberOfVotes}
+                    </Card.Text> */}
+                </div>
+                    <Button onClick={this.increaseNoOfVotes}  variant="primary">Vote</Button>
                 </Card.Body>
             </Card>
+
+
+            
             </>
         )
     }

@@ -15,7 +15,9 @@ class Main extends React.Component {
     this.props.hornedData.map((item,idx)=>{
                     return (
                     <HornedBeast title={item.title} description={item.description} image_url={item.image_url}
-                    showCard={this.props.showCard} key={idx} idx={idx}></HornedBeast>
+                    showCard={this.props.showCard} 
+                    // hideCard={this.props.hideCard} 
+                    key={idx} idx={idx}></HornedBeast>
                     )
 
 
