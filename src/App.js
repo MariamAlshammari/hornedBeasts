@@ -32,6 +32,11 @@ class App extends React.Component {
     selected: false});
 }
 
+ filterdBeast = (data) =>{
+   this.setState({data });
+ }
+ 
+
 
   render() {
     return (
@@ -40,8 +45,11 @@ class App extends React.Component {
       <Header/>
 
       <Main showCard={this.showCard} hornedData={this.state.data}
+      filterdBeast={this.filterdBeast}
       //  hideCard={this.hideCard}
+
        />
+
       <SelectedBeast selected={this.state.selected} showingData={this.state.showingData} hideCard={this.hideCard} />
    
    <Footer />
